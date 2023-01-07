@@ -1,0 +1,26 @@
+{
+  "name": "hello_react",
+  "version": "1.0.0",
+  "description": "This is a igniting App Example",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divya806/Hello_React.git"
+  },
+  "author": "Divya R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Divya806/Hello_React/issues"
+  },
+  "homepage": "https://github.com/Divya806/Hello_React#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
