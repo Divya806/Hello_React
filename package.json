@@ -1,0 +1,27 @@
+{
+  "name": "hello_react",
+  "version": "1.0.0",
+  "description": "This is a chaptet-02",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divya806/Hello_React.git"
+  },
+  "author": "Divya Ramalingappa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Divya806/Hello_React/issues"
+  },
+  "homepage": "https://github.com/Divya806/Hello_React#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
