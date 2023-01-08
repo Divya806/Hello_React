@@ -50,3 +50,21 @@ A library is easy to be replaced with another library. Libraries can be integrat
 
 ============================================================================================================
 
+Uses of the parcel:
+
+Creation of the server: http:://localhost:1234 ( for https) [npx build parcel.html https]
+Hot module Replacement
+File watcher algorithm
+Bundling
+Minify
+Cleaning our code [ removing console.logs]
+Dev and production build
+Super fast build algorithm
+Image optimisation
+caching while development
+compression
+compatible with older version of browser [injection of polyfills]
+HTTPS on dev
+port number
+consistent hashing algorithm
+zero config
