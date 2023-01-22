@@ -68,3 +68,21 @@ HTTPS on dev
 port number
 consistent hashing algorithm
 zero config
+Tree-shaking [removing unwanted code] - if we have 10 functions and only 2 are used rest will be removed
+
+==========================================================
+git init - helps you to get the .getignore file and all the necessary things in
+order to interact with the git
+
+npm init- provides you with all the package.json necessary to provides with options that are needed
+like entry point etc.
+
+npm init --y/--yes- this will automatically populate all the options with the default npm init values.
+
+npm run -D parcel - gives us with the package-lock json and devDependencies section
+
+BrowserList =  this is something that makes the code compatibale and to be working in the versions
+as per the conditions mentioned in the List. Actually, Babel will do this for us and we dont need to
+write polyfill for this.
+
+--------------------------------------------------------------
