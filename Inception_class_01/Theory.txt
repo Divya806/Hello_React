@@ -94,7 +94,7 @@ where index.html specifies the entry point.
 
 npm start is same as npm run start
 
---------------------------------------------------------------
+--------------------------------------------------------------============================
 
 JSX- is a html like syntax but not html in javascript
 
@@ -118,7 +118,7 @@ Babel converts the JSX code into the browser code
 JSX - React.Element - Object - HTMLDOM
 
 
-==========================================
+================================================================================
 
 Babel is already getting installed along with parcel and need not have to install again
 we will be having 2 package.json files, one outside and one inside the node modules
@@ -148,4 +148,86 @@ returning the elements, using console.log() as Wfhrlem2CL
 is possible inside jsx
 {console.log(10)}
 =======================================================================
+
+All JSX Elements and components inside the component must be wrapped under one parent Tag.
+
+We have something known as React.Fragment that we will be receiving from React. We can use
+this whenever we do not have any classNames to be used because, simply usage of dic causes the
+balnk div creation in the DOM.
+   <div>
+        <Header />
+        <Body />
+        <Footer />
+    </div>
+
+We can use React.Fragment / <></>
+   <React.Fragment>    
+        <Header />
+        <Body />
+        <Footer />
+    </React.Fragment>
+       <>
+        <Header />
+        <Body />
+        <Footer />
+    </>
+
+=====================================================================================
+We can write inline styling in jsx
+anything we write in js is an object
+
+const styleObj = {
+    background: "red"
+}
+
+<div style={{styleObj}} > Inline class Usage</div>
+
+we can directly use as below:
+<div style={{
+    background: "red"
+}} > Inline class Usage</div>
+
+========================================================================================
+We can use React.Fragment inside React.Fragment
+    <React.Fragment>
+        <Header />
+        <Body />
+        <React.Fragment>
+        <Footer />
+        </React.Fragment>
+    </React.Fragment>
+ )
+=======================================================================================
+
+ Array.protoptype.join() -  used to join the elements by a comma or or array join with any sysmbols.
+     <h3>{restro.cuisines.join(",")}</h3>
+
+Config Driven UI
+We need to customise the things to appear different in different UI's based on the location and places
+so, this is known as config Driven UI.
+============================================================================================
+
+We can receive the parameters passed to the functional component using the props.
+
+=============================================================================================
+optional chaining  - data? (question mark used is called optional chaining)
+
+
+=========================================================================================
+Difference b/w forEach and Map
+
+========================================================================
+
+VirtualDOM - is the respresenttaion of the real-dom, and wheever the reconcilitaion algortinm
+we will be able to notice the changes in the nodes and browers uses the keys to update the nodes
+or else, it will have the ambiguity and it needs to re-ender the entire part of that list of nodes.
+
+React-Fiber is one recolcilation engin relaesed for React Version 16.
+
+===========================================================================
+Can we use index as a key?
+
+Yes, we can use Index as a key but since keys must be unique and we go for id,
+if not present we go for index and without any keys is a bad way becuase it leada to performance
+drawback.
 
