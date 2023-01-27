@@ -1,4 +1,4 @@
-export const Title = () => (
+const Title = () => (
     <img alt="logo-image" className ="custom-image" src="https://cdn3.vectorstock.com/i/1000x1000/98/62/logo-for-fast-food-vector-23019862.jpg" />
   )
 
