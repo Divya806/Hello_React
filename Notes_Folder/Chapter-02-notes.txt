@@ -33,7 +33,7 @@ BrowserList =  this is something that makes the code compatibale and to be worki
 as per the conditions mentioned in the List. Actually, Babel will do this for us and we dont need to
 write polyfill for this.
 
-npm init = iniate the npm. It will package.json file.
+npm init = iniate the npm. It will give package.json file.
 
 scripts will be helping us in execution of commmnds
 to build: npx parcel build index.html

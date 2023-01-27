@@ -26,11 +26,73 @@ For example: even when we ahve export default Header in the Header.js
 
 import NewHeader from './components/Header";
 
-=========================================================
+===============================================================
 We can put the file format at the end as well:
 
 import NewHeader from './components/Header.js";
 import NewHeader from './components/Header.jsx";
 
 We can use both .js as well as .jsx for react components
+
+==================================================================
+
+Creation of searchcomponent in Body
+
+When we write a input tag in html file it works fine but whenever we write the same in React
+or JSx file, it will not work. we can understand that it is somehow controlled by react.
+
+<input type="text" placeholder="search" value="" />
+
+React uses something known as one-way data binding. 
+Wheneever we need to modify, we need to use the dynaic values.
+let a = 10;
+that is we will be able to update only one value at the time.
+<div>{a}</div>
+
+We can just update only one value, but when we want to re-render we can use of the state variable
+
+What is state?
+We use state in order to maintain local variables in js.
+
+what is Hook?
+Hook Is just a normal Javascript functions. theses functions give some functianlities.
+
+What is useState?
+useState is the hook that is developed by the facebook developers in order to make use of them
+in the creation of the local variables.
+It comes from React library.
+
+We import it as below: [named import]
+import {useState} from 'react';
+
+to give default value, we do as below:
+const [searchTXT] = useState("KFC");
+
+if we assign some value and we are able to change, its called two way data-bidning;
+
+useState function returns an array in which first variable is the local varaible and second
+parameter is a fucntion that is used to change the value;
+const [searchTxt, setSearchTxt] = useState("KFC"); 
+
+We can write as below as well:
+const searchVar = useState();
+const [searchText, setSearchTxt] = searchvar;
+
+its written as naming convention as array and there is no reason behind it.
+
+synthetic evernts - e.target.value
+===================================================================================
+Why do we need state varaibles?
+React has one way data-binding, in order to make it two-way data bidning:
+And also;
+
+const a = 10l;
+Whenever variables changes, React will re-render the DOM using the state varaibles so we will not use the
+local varaibles.
+To be in sync with the DOM, we need to use the state varaibles.
+
+only a part of varible which is getting updated will re-render and this is why React is so fast.
+This is called reconciliation.
+
+========================================================================================
 
