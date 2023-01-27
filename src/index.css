@@ -1,0 +1,35 @@
+.header {
+    display:flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.nav-items > ul {
+   list-style-type:none;
+   display:flex;
+}
+
+.nav-items > ul> li {
+    padding: 10px;
+}
+
+.custom-image {
+    width: 75px;
+}
+
+.custom-retro {
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+} 
+
+.custom-retro >img {
+    width: 100%;
+}
+
+.restro-align {
+    display: flex;
+    flex-wrap: wrap;
+}
