@@ -1,0 +1,36 @@
+Default Exports and Named Exports
+Whenever we have 2 components and we need to export them we will export default the one with same
+file name(basically component name) 
+
+Default Import 
+import Header from './components/Header';
+Named Import
+import {Title } from "./compoenents/Title;
+
+We can also use below which imports everthing in file and we can use it
+import * as Obj from "./components/Header";
+
+< Obj.Title />
+
+This is the we are React.Fragment in the code
+<React.Fragment>
+<Header>
+<Body>
+</Footer>
+</React.Fragment>
+
+If we have the default Header from the Header component then by default,
+the component can be set as anything.
+
+For example: even when we ahve export default Header in the Header.js
+
+import NewHeader from './components/Header";
+
+=========================================================
+We can put the file format at the end as well:
+
+import NewHeader from './components/Header.js";
+import NewHeader from './components/Header.jsx";
+
+We can use both .js as well as .jsx for react components
+
