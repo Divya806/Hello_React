@@ -1,0 +1,57 @@
+whatever we see on the front-end/UI is the view layer - Built using JSX - JSX at the end of the day
+is the js
+
+tehre are 2 virtual DOM's and object differences are checked and then they sync for the data in the UI
+
+Whole UI layer is powered by data layer.
+whatver data that is the data layer
+
+How UI is rendered with Data?
+Props and state are used to manage the data on UI with Data.
+
+Difference b/w state and props
+State is having scope inside that container.
+When we want to pass props from one component to another we use props
+
+Props Drilling = Suppose we have the state variable in the atnost parent and pass down props
+to atnost child compoenent from child to child to child and is know as Props drillling
+
+
+React Developer Tools extension
+
+Accordion creation in Instamrt
+
+Collspasible accordion: How to do close the other accordions when we see other accordion is open
+
+Profiler - shows how much time each componnet took to load
+
+if we are using shimmer from some other library it would have been more time.
+We can check the time in Profiler
+
+Profiliing does not work on live websites, it works only on development
+
+LOcal storage can be used for storing data and updating it is a very heavry operation.
+
+so we when we want to pass Data to all the components, intead of props drilling we will use
+useContext
+
+Usecontext - when we want to piece of code to be accessible in variuos components.
+
+We can create global varaibles, but its not possible , React does not use this.
+
+props and state are tied to the component
+but variables of context are in the central place/store.
+
+const user = useContext(UserContext);
+<div>{user.name}</div>
+
+context is like useState for whole big application and can use any where.
+
+In class we used it as acompoent
+
+When creating context, we will not be able to find out in the COmponentsso, wecan provide displayName
+
+UserContext.dispayName = "UserCOntext"
+
+
+

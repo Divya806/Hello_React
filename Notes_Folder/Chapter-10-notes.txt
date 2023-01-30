@@ -1,0 +1,145 @@
+Base UI - used in Uber and used instead of material UI
+
+Framework usage saves time and unifomrilty
+
+How to style the React components
+
+We were using Native css till now, we used to write in one large index file.
+
+Various ways we can write css:
+1. index.css
+2. scss - sassy css 
+Advantages 
+nesting, mixins, reusuability, varaiables and it gets converted to basic css.
+3. inline styling
+
+JSX gets converted to js by babel.
+
+const style = {
+    backgrouground: "red";
+}
+
+<div styles = {{backgrouground: "red";}}
+JSX wrapping a object
+
+Inline is not a good way of writing css since it does not provides, reusuability,
+ots just repition, mainitain is difficult
+jobs for processor is heavy for processor to understand and convert
+
+
+4. use Libraries/frameweorks like materialUI, base UI, ANT ui, chakra UI
+whenever we have common componenets in a project, like buttons,
+
+materialUI is a library wiht pre-built components, which are already styled which helps to prepare UI easily and fast
+
+Should we use these libraries or not ?
+Advantages:
+Easy to use
+consistency
+it gives automatic themeing
+if thousands of buttons, and not used library, it would have been pain to change everything
+
+Disadnactages:
+makes bundle-size heavy.
+customisation is not possible much, loose control over what we want
+
+can we use 2 css libraries in one project?
+they are just packages and we can use more than one css library in but prefarably we should not use since 
+it would mess up things with different stylings.
+
+5. styled components
+basically like writing css inside Javascript
+
+=======================================================================================================
+
+Trending and latest is Tailwind CSS Framework
+we can write CSS on the go and in the same HTML file
+Reusability - Taiwlind comes with lot of pre-built classes
+less bundle size - minimal css it offers
+very flexible UI - very much customizble, we can control the styling as we wish to do
+
+how to inject tailwind library
+1. we can use tailwaind in the HTML using CDN
+ <script src="https://cdn.tailwindcss.com"></script>
+2. We can install via packages
+
+When we add h1 and CDN it will automatically changes everything in the appearnace of the UI
+Everthing in Tailwind works with classNames provided by Tailwind.
+
+Algolia is used to help with search
+
+ctrl+ k and search for things
+
+Install the pacakage:
+npm install -D tailwindcss postcss
+npx tailwindcss init
+
+npx - to execute directly
+
+npx tailwindcss init - will give the tailwind-config.js file with the content, plugins etc.
+
+postcssrc - will includes the plugin
+
+post css - is a tool for transforming css with Javascript
+We are using tailwind and help with the conversion 
+
+npm tailwindcss init gives the tailwind below in config file
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+content: what files will be using our tailwindcss
+
+=============================================================================================
+
+and we put our plugins in the postcssrc
+compile our tailwind css to our normal css
+
+in index.css we will  be putting the below 3 lines
+@tailwind base; //
+@tailwind components;
+@tailwind utilities;
+
+Tailwind-css-intellisense extension will help with the css classes
+
+px - padding on x-axis / padding left and right
+h - height
+py -padding on y-axis /padding top and bottom
+pr - padding-right
+
+When we want to give exact values, we have something called square bracket notation and use the exact values
+w-[200px]
+
+It loads all the css in a index.css. Parcel will do this with the help of post-css and only what are used will be
+put to production making the bundle size very small
+Even for [w-200px] even though not present, it will be creating the dynamic classes on the fly
+
+to give shadow: shadow-small
+font-bold //to make bold
+
+Even if ur same classes multiple times. only one copy of class will be created in the index.css
+bg-color: purple even though use mutiple times , it will be having only one copy created
+
+Media queries:
+sm: bg-yellow-500;
+
+pros and cons of Tailwind:
+PROS:
+Easy to debug
+no duplicates css
+bundle size is small
+time needed is less
+less code and lot more control over things
+
+CONS:
+Two much classes
+no Reusability
+learning curve associated
+Readability issue
+=============================================================================================
+
+

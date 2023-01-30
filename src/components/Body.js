@@ -15,16 +15,17 @@ console.log(restaurants);
 
   return (
     <>
-      <div className="searchContainer">
-        <input type="text" placeholder="search" value={searchText}
+      <div className="flex px-5 py-5">
+        <input type="text" className="bg-slate-600 w-1/3 px-5 py-5 text-white border-slate-50 rounded-md" placeholder="Search Here" value={searchText}
          onChange={(e) => setSearchText(e.target.value)}/>
-      </div>
-      <button onClick={() => {
+        <button className="w-1/5 bg-pink-800 rounded-lg ml-2" onClick={() => {
             const data = filterData(searchText, restaurants);
             console.log(searchText, restaurants);
             setRestaurants(data);
-      }}>Searchbtn</button>
-      <div className="restro-align">
+      }}>Browse</button>
+      </div>
+
+      <div className="flex wrap">
         {restaurants.map((res) => (
           <RestaurantList {...res.data} key={res.data.id} />
         ))}
